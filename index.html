@@ -16,14 +16,15 @@
     <div class="w-75 mx-auto pb-4">
         <h2 class="py-4">Proudect Mangement System</h2>
         <label for="productNameInput"> ProductName </label>
-        <input type="text" class="form-control my-3" id="productNameInput">
+        <input type="text" oninput="validateProductName()" class="form-control my-3" id="productNameInput">
         <label for="productPriceInput"> ProductPrice </label>
         <input type="number" class="form-control my-3" id="productPriceInput">
         <label for="productCategoryInput"> ProductCategory </label>
         <input type="text" class="form-control my-3" id="productCategoryInput">
         <label for="productDescriptionInput"> ProductDescription </label>
         <textarea type="text" class="form-control my-3" id="productDescriptionInput"></textarea>
-        <button  onclick="addProduct()" class="btn  btn-outline-info"> Add Product</button>
+        <button  onclick="addProduct()" class="btn  btn-outline-info" id="addBtn"> Add Product</button>
+        <button  onclick="updateProdut()" class="btn  d-none btn-outline-info" id="updateBtn">Update Product</button>
     </div>
 
     <div class="w-75 mx-auto">
