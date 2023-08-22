@@ -57,6 +57,7 @@ for(var i=0; i<productList.length; i++){
     <td><button onclick=deletProuduct(${i}) class="btn btn-outline-danger">delete</button></td>
 </tr>`
 }
+
 document.getElementById('tableBody').innerHTML=cartoona;
 }
 
