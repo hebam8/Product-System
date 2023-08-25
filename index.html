@@ -16,9 +16,9 @@
 
 </head>
 <body>
-    
-    <div class="w-75 mx-auto pb-4">
-        <h2 class="py-4">Proudect Mangement System</h2>
+  
+    <div class="container w-75 mt-5 shadow-lg p-4 ">
+        <h1 class="text-center">CRUD SYSTEM</h1>
         <label for="productNameInput"> ProductName </label>
         <input type="text" oninput="validateProductName()" class="form-control my-3" id="productNameInput">
         <label for="productPriceInput"> ProductPrice </label>
@@ -27,8 +27,8 @@
         <input type="text" class="form-control my-3" id="productCategoryInput">
         <label for="productDescriptionInput"> ProductDescription </label>
         <textarea type="text" class="form-control my-3" id="productDescriptionInput"></textarea>
-        <button  onclick="addProduct()" class="btn  btn-outline-info" id="addBtn"> Add Product</button>
-        <button  onclick="updateProdut()" class="btn  d-none btn-outline-info" id="updateBtn">Update Product</button>
+        <button  onclick="addProduct()" class="btn  btn-outline-info add-product" id="addBtn"> Add Product</button>
+        <button  onclick="updateProdut()" class="btn  d-none btn-outline-info update-product" id="updateBtn">Update Product</button>
     </div>
 
     <div class="w-75 mx-auto">
