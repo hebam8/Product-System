@@ -21,12 +21,20 @@
         <h1 class="text-center">CRUD SYSTEM</h1>
         <label for="productNameInput"> ProductName </label>
         <input type="text" oninput="validateProductName()" class="form-control my-3" id="productNameInput">
+        <p class="text-danger" id="textValidateName"></p>
+
         <label for="productPriceInput"> ProductPrice </label>
         <input type="number" class="form-control my-3" id="productPriceInput">
+        <p class="text-danger" id="textValidatePrice"></p>
+
         <label for="productCategoryInput"> ProductCategory </label>
         <input type="text" class="form-control my-3" id="productCategoryInput">
+        <p class="text-danger" id="textValidateCategory"></p>
+
         <label for="productDescriptionInput"> ProductDescription </label>
         <textarea type="text" class="form-control my-3" id="productDescriptionInput"></textarea>
+        <p class="text-danger" id="textValidateDesc"></p>
+
         <button  onclick="addProduct()" class="btn  btn-outline-info add-product" id="addBtn"> Add Product</button>
         <button  onclick="updateProdut()" class="btn  d-none btn-outline-info update-product" id="updateBtn">Update Product</button>
     </div>
